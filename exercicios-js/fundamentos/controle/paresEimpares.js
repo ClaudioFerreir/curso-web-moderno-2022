@@ -1,9 +1,16 @@
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for (let i = 0; i < nums.length; i++) {
-  if (nums[i] % 2 == 0) {
-    console.log(`${nums[i]} é numero par`)
+const numeros = [1, 2, 3, 4, 5]
+let impares = []
+let pares = []
+
+for (let i = 0; i < numeros.length; i++) {
+  if (numeros[i] % 2 == 0) {
+    pares.push(numeros[i]);
+
   }else{
-    console.log(`${nums[i]} é numero impar`)
+    impares.push(numeros[i])
   }
 }
+
+console.log(pares.sort())
+console.log(impares.reverse())
